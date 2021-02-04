@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyFormApplication">
         <activity android:name=".SummaryActivity"
-            android:label="Form Preview"
+            android:label="Form Summary"
             android:parentActivityName=".MainActivity"/>
         <activity android:name=".MainActivity">
             <intent-filter>
