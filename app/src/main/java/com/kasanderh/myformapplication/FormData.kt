@@ -12,5 +12,7 @@ data class FormData(
 
 ) : Serializable {
 
+    fun passwordStrength() = if(userPassword.length > 8) "The chosen password is strong." else "The chosen password is weak."
+
 
 }
