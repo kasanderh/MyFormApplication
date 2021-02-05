@@ -15,6 +15,7 @@
         app:cardCornerRadius="6dp">
 
         <TextView
+            android:autoLink="all"
             android:id="@+id/text_view_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
