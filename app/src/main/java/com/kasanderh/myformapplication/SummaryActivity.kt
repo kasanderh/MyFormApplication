@@ -26,11 +26,8 @@ class SummaryActivity : AppCompatActivity() {
         formData = intent.getSerializableExtra("FormData") as FormData
 
         summaryText = """
-            Title:
-            ${formData.jobTitle}
-            
             Contact Name: 
-            ${formData.contactNameFirst} ${formData.contactNameLast}
+            ${formData.jobTitle} ${formData.contactNameFirst} ${formData.contactNameLast}
             
             Contact Email:
             ${formData.contactEmail}

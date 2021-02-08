@@ -10,20 +10,26 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        setupSpinner()
+        setupButton()
+    }
 
+    private fun setupSpinner() {
+        val spinnerValues: Array<String> = arrayOf("Miss", "Mrs", "Ms", "Mr", "Mx", "Dr", "Professor")
+        val spinnerAdapter = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, spinnerValues)
+        spinner_job_title.adapter = spinnerAdapter
+    }
+
+    private fun setupButton() {
         button_submit.setOnClickListener {
             onSubmitClick()
         }
-
-        val spinnerValues: Array<String> = arrayOf("Android Developer", "Android Engineer")
-        val spinnerAdapter = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, spinnerValues)
-        spinner_job_title.adapter = spinnerAdapter
     }
 
     private fun onSubmitClick() {
 
         val formData = FormData(
-                spinner_job_title.selectedItem?.toString(),
+                spinner_job_title.selectedItem as String,
                 edit_text_contact_name_first.text.toString(),
                 edit_text_contact_name_last.text.toString(),
                 edit_text_contact_email.text.toString(),
