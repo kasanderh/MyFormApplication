@@ -18,8 +18,6 @@ class SummaryActivity : AppCompatActivity() {
         setContentView(R.layout.activity_summary)
         displaySummary()
 
-
-
     }
 
     private fun displaySummary() {
