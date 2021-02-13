@@ -2,6 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/gradient_background"
     android:layout_height="match_parent">
 
     <LinearLayout
@@ -33,7 +34,6 @@
                 android:id="@+id/edit_text_contact_name_first"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/white"
                 android:inputType="textCapWords"
                 tools:text="Example First Name" />
 
@@ -50,7 +50,6 @@
                 android:id="@+id/edit_text_contact_name_last"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/white"
                 android:inputType="textCapWords"
                 tools:text="Last name Example" />
 
@@ -66,7 +65,6 @@
                 android:id="@+id/edit_text_contact_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/white"
                 android:inputType="textCapWords"
                 tools:text="example@example.com" />
 
@@ -82,7 +80,6 @@
                 android:id="@+id/edit_text_phone_number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/white"
                 android:inputType="phone"
                 tools:text="+47 11 22 33 44" />
 
@@ -98,7 +95,6 @@
                 android:id="@+id/edit_text_user_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/white"
                 android:inputType="textPassword"
                 tools:text="Secret password" />
 

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
     android:gravity="center_vertical"
     android:orientation="vertical"
     android:padding="48dp">
@@ -15,11 +16,11 @@
         app:cardCornerRadius="6dp">
 
         <TextView
-            android:autoLink="all"
             android:id="@+id/text_view_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="12dp"
+            android:autoLink="all"
             android:fontFamily="sans-serif-light"
             android:textColor="#212121"
             android:textSize="18sp"
