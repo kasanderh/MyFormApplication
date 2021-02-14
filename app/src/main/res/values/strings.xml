@@ -7,4 +7,5 @@
     <string name="email_address">Email address</string>
     <string name="select_job_title">Select a Job Title</string>
     <string name="select_a_title">Select a Title:</string>
+    <string name="register">Register</string>
 </resources>
