@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/gradient_background">
 
     <LinearLayout
@@ -24,6 +25,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:paddingStart="12dp"
+            android:paddingEnd="12dp"
             android:text="@string/select_a_title"
             android:textSize="12sp" />
 
@@ -103,6 +105,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
+            app:passwordToggleEnabled="true"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -120,7 +123,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="48dp"
-            android:text="Submit" />
+            android:text="@string/submit" />
 
 
     </LinearLayout>
